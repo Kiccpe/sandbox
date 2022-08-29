@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Pinterest_Logo.svg/2560px-Pinterest_Logo.svg.png" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text">
+        </div>
+    </div>
+
+
+    <h1> Testing if this page will load</h1>
+    <h2>This is a h2 tag</h2>
+    <h3 class="underlined">Another one</h3>
+
+    <div>
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Gallery</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+
+    <br>
+
+    <input type="text" placeholder="Username">
+    <button class="btn">Submit</button>
+
+    <div id="loadingbar">
+        <div class="loadingbar-bar" style="width: 50px"></div>
+    </div>
+    <div class="photo">
+        <img src="https://www.conserve-energy-future.com/wp-content/uploads/2020/07/Sunflower.jpg" alt="">
+        <h4>Sunflower!</h4>        
+        <div>
+            <p>This is a photo of some sunflowers!</p>
+        </div>
+    </div>
+
+    <h5 id="something" class="red">This is a new tag</h5>
+
+    <script>
+        const input = document.querySelector('input')
+
+        input.addEventListener('keydown', (ev) => {
+            document.querySelector('button').classList.toggle('active', !(ev.target.value?.length > 0) )
+        })
+
+        setInterval(() => {
+            const bar = document.querySelector('.loadingbar-bar');
+            const width = parseInt(bar.style.width.replace('px', ''));
+
+            if (width >= 200) {
+                bar.style.width = 0;
+            } else {
+                bar.style.width = width+1+'px';
+            }
+        }, 25)
+    </script>
+</body>
+</html>

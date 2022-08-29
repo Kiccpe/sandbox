@@ -1,0 +1,148 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    color: blueviolet;
+}
+
+h1, .underlined {
+    text-decoration: underline
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #222222;
+    font-size: 20px;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 8px;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+.btn {
+    background: grey;
+}
+
+.btn.active {
+    background: darkblue;
+}
+
+.photo {
+    width: 200px;
+    border: 1px solid #cecece;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+.photo img {
+    width: 100%;
+}
+
+.photo > div > * {
+    margin: 0;
+}
+
+#something {
+    color: red;
+}
+
+h5.red { 
+    color: blue;
+}
+
+h5 {
+    color: darkorange;
+    text-decoration: underline;
+}
+#loadingbar {
+    width: 200px;
+    height: 25px;
+    margin: 5px;
+    border: 1px solid #222222;
+}
+
+.loadingbar-bar {
+    height: 100%;
+    background: green;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #222222;
+
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.item {
+    width: 100px;
+    height: 100%;
+    border: 1px solid #222222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    flex: 1 1 25%;
+}
+
+.navbar {
+    height: 40px;
+    border-bottom: 1px solid #cecece;
+    display: flex;
+    align-items: stretch;
+    padding: 5px;
+}
+
+.logo {
+    /* background: red; */
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+}
+.links {
+    flex: 1;
+    margin: 0 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    display: inline-block;
+}
+
+.search {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.search input {
+    width: 90%;
+    border-radius: 10px;
+    border-width: 1px;
+    padding:  4px;
+}
